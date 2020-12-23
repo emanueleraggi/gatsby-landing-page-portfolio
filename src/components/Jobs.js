@@ -42,12 +42,12 @@ const Jobs = () => {
 
     const { company, position, date, desc } = jobs[value];
     // const { company, position, date, desc } = jobs[1]; <-- this way is hardcoded
-    console.log(company, position, date, desc);
+    // console.log(company, position, date, desc);
 
   return (
     <section className="section jobs">
       <Title title="experience" />
-      <div className="job-center">
+      <div className="jobs-center">
         {/* btn container where we show all the buttons */}
         <div className="btn-container">
           {jobs.map( (job, index) => {
@@ -62,14 +62,14 @@ const Jobs = () => {
                 // Because we are passing the index I cannot just reference the function
                 // but I need to invoke it so only once I click than I run my set index
                 onClick={() => setValue(index)}
-                className={`job-btn ${index === value && 'active-btn'}`}
+                className={`job-btn ${index === value && "active-btn"}`}
               >{job.company}
               </button>
             )
           })}
         </div>
         {/* job info */}
-        {/* <article className="job-info">
+        <article className="job-info">
           <h3>{position}</h3>
           <h4>{company}</h4>
           <p className="job-date">{date}</p>
@@ -83,7 +83,7 @@ const Jobs = () => {
               )
             })
           }
-        </article> */}
+        </article>
       </div>
       <Link to="/about" className="btn center-btn">
         more info

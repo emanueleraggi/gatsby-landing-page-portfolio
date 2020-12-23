@@ -550,6 +550,7 @@ Jobs
   flex-direction: row;
   justify-content: center;
   margin-bottom: 4rem;
+  border: 0.2rem dotted red;
 }
 .job-btn {
   background: transparent;
@@ -562,6 +563,8 @@ Jobs
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
+  border: 0.2rem dotted green;
+
 }
 .job-btn:hover {
   color: var(--clr-primary-5);
@@ -623,6 +626,27 @@ Jobs
     box-shadow: -2px 0 var(--clr-primary-5);
   }
 }
+
+
+@media screen and (min-width: 768px) {
+  .jobs-center {
+    /* width: 90vw;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    column-gap: 4rem; */
+  }
+
+  .btn-container {
+    /* display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-row-gap: 2rem; */
+  }
+  .job-btn {
+    /* margin-bottom: 1rem;
+    flex-direction: row; */
+  }
+}
+
 
 /*
 =============== 
