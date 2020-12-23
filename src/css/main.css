@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
 =============== 
@@ -550,7 +550,7 @@ Jobs
   flex-direction: row;
   justify-content: center;
   margin-bottom: 4rem;
-  border: 0.2rem dotted red;
+  /* border: 0.2rem dotted red; */
 }
 .job-btn {
   background: transparent;
@@ -563,7 +563,7 @@ Jobs
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
-  border: 0.2rem dotted green;
+  /* border: 0.2rem dotted green; */
 
 }
 .job-btn:hover {
